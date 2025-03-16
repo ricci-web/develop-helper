@@ -1,0 +1,67 @@
+{
+  "layouts": [
+    {
+      "id": 1,
+      "name": "完美居中布局",
+      "componentName": "CenterLayout",
+      "tags": ["Flex", "居中对齐"],
+      "code": "<template>\n  <div class=\"center-layout\">\n    <div class=\"center-box\">居中内容</div>\n  </div>\n</template>\n\n<style scoped>\n.center-layout {\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.center-box {\n  padding: 20px;\n  background: #fff;\n  border-radius: 8px;\n  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);\n}\n</style>"
+    },
+    {
+      "id": 2,
+      "name": "圣杯布局",
+      "componentName": "HolyGrailLayout",
+      "tags": ["Flex", "响应式", "导航栏"],
+      "code": "<template>\n  <div class=\"holy-grail\">\n    <header>Header</header>\n    <div class=\"content\">\n      <nav>Nav</nav>\n      <main>Main</main>\n      <aside>Aside</aside>\n    </div>\n    <footer>Footer</footer>\n  </div>\n</template>\n\n<style scoped>\n.holy-grail {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\nheader, footer {\n  height: 30px;\n  background: #4a9eff;\n  color: white;\n  display: flex;\n  align-items: center;\n  padding: 0 10px;\n}\n\n.content {\n  flex: 1;\n  display: flex;\n}\n\nnav, aside {\n  width: 100px;\n  background: #67c23a;\n  color: white;\n  padding: 10px;\n}\n\nmain {\n  flex: 1;\n  background: #f5f7fa;\n  padding: 10px;\n}\n</style>"
+    },
+    {
+      "id": 3,
+      "name": "网格画廊",
+      "componentName": "GridGallery",
+      "tags": ["Grid", "响应式"],
+      "code": "<template>\n  <div class=\"grid-gallery\">\n    <div v-for=\"n in 6\" :key=\"n\" class=\"grid-item\">{{ n }}</div>\n  </div>\n</template>\n\n<style scoped>\n.grid-gallery {\n  height: 100%;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 10px;\n  padding: 10px;\n}\n\n.grid-item {\n  background: #ffd04b;\n  border-radius: 4px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  aspect-ratio: 1;\n}\n</style>"
+    },
+    {
+      "id": 4,
+      "name": "卡片 4",
+      "componentName": "Card4",
+      "tags": ["Flex", "响应式"],
+      "code": ""
+    },
+    {
+      "id": 5,
+      "name": "卡片 5",
+      "componentName": "Card5",
+      "tags": ["Flex", "响应式"],
+      "code": ""
+    },
+    {
+      "id": 6,
+      "name": "卡片 6",
+      "componentName": "Card6",
+      "tags": ["Flex", "响应式"],
+      "code": ""
+    },
+    {
+      "id": 7,
+      "name": "卡片 7",
+      "componentName": "Card7",
+      "tags": ["Flex", "响应式"],
+      "code": ""
+    },
+    {
+      "id": 8,
+      "name": "卡片 8",
+      "componentName": "Card8",
+      "tags": ["Flex", "响应式"],
+      "code": ""
+    },
+    {
+      "id": 9,
+      "name": "卡片 9",
+      "componentName": "Card9",
+      "tags": ["Flex", "响应式"],
+      "code": ""
+    }
+  ]
+}
